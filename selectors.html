@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Selectors</title>
+</head>
+<body>
+
+    <ul>
+        <li title="iki açıklama">Lorem ipsum dolor sit.</li>
+        <li>Possimus perferendis dolorum ipsa!</li>
+        <li class="kirmizi">Inventore quam corrupti quasi!</li>
+        <li>Necessitatibus suscipit unde dolore!</li>
+        <li id="oge5">Ratione voluptates nesciunt excepturi.</li>
+        <li>Iusto exercitationem facere distinctio!</li>
+        <li class="kirmizi">Non molestiae qui facilis.</li>
+        <li>A error ipsum obcaecati!</li>
+        <li title="bir açıklama">Laborum minima autem animi.</li>
+        <li>Officiis mollitia maiores id.</li>
+    </ul>
+
+    <p title="bir açıklama">
+        Lorem ipsum <span class="kirmizi">dolor</span> sit amet.
+    </p>
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        //her şeyi seç ve css özeliğini değiştir
+        //$("*").css({
+        //  "border": "1px solid black",
+        //  "margin": "6px"
+        // });
+
+        //element ismiyle seçim: tüm li'leri seç, hepsinin sonuna gülücük koy
+        $("li").append(":)");
+        //$("ul").css("list-style", "none");
+
+        //class ile seçim:
+        $(".kirmizi").css("color", "red");
+
+        //id ile seçim
+        $("#oge5").css("test-decoration", "underline")
+
+        // title attribute'unda bir açıklama yazanları seç
+        $('[title="bir açıklama"]').css("background-color", "yellow")
+
+        // çoklu seçim
+        $("#oge5, .kirmizi").prepend("+ ");
+
+        //css hiyerarşi
+        $("p > .kirmizi").css("background-color", "gray");
+
+        //siblings: #oge5 sonraki kardeşleri
+        $("#oge5 ~ *").css("border-left", "10px solid red");
+    </script>
+
+</body>
+</html>
