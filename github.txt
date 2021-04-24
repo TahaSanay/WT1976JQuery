@@ -8,3 +8,6 @@ git push -u origin master
 git add.
 git commit -m "değişikliği anlatan kısa bir ifade"
 git push
+
+# not:
+git status diyerek repo'nuzun o anli durumu hakkında bilgi edinebilirsiniz

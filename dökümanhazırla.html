@@ -5,19 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    <textarea id="bilgi" cols="60" rows="20"></textarea>
-
     <script src="jquery-3.6.0.min.js"></script>
     <script>
-        $.ajax({
-            url: "git.txt",
-            type: "get",
-            success: function(cevap) {
-                $("#bilgi").val(cevap);
-            }
+        //sayfa hazır oldugunda fonksiyon içindeki
+        //kodu çalıştır
+        $(document).ready(function() {
+        $("p").html("merhaba");
         });
     </script>
+</head>
+<body>
+    <p>---</p>
 </body>
 </html>

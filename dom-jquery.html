@@ -4,27 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>jQuery öğreniyorum</title>
 </head>
 <body>
-    <p>Lorem, ipsum dolor.</p>
-    <p>Lorem, ipsum dolor.</p>
+    <p>Lorem ipsum dolor.</p>
+    <p>Lorem ipsum dolor.</p>
 
+    <script src="jquery-3.6.0.min.js"></script>
     <script>
-        //yukarıdaki ilk paragrafın son nesnesine erişiyoruz
-        // var parag = document.querySelector("p")
-        // parag.style.color = "red"; //renk stili değiştir
-        
-        //mevcut dom nesnesini jqueryleştirme
-        //$(parag).css("color", "red");//bu kod çalışmaz
+        //yukarıdaki ilk paragrafın dom nesnesine erişiyoruz
+        //var parag = document.querySelector("p");
+        //parag.style.backgroundColor = "red"; // renk stilini değiştir
 
+        //mevcut dom nesnesini jqueryleştirme
+        //$(parag).css("color", "red"); //bu kod çalışmaz
+        
         //sayfadaki tüm paragrafları seçer ve kırmızı yapar
-       var p1 = $("p"); //jquery object
-       p1.css("color", "red");
+        var p1 = $("p"); //jquery object dizisi
+        p1.css("color", "red");
 
         //jquery nesnesinden dom elementine erişme
-        var p2 = $("p")[0];//saf dom elementi
-        p2.style.backgroundColor = "green"; //saf js ile değiştirdik
-    </script>
+        var p2 = $("p")[0]; //saf dom elementi
+        p2.style.backgroundColor = "green" //saf js ile değiştirme
+        </script>
 </body>
 </html>

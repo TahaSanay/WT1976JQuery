@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis doloribus sequi et minus voluptas quam culpa vel qui impedit, id saepe enim iure aperiam molestias corporis dolor incidunt dicta nulla.</p>
+    <p id="önemli">Tempore accusamus facilis, dolorum doloribus asperiores quia! Recusandae unde enim dolorum possimus impedit eveniet, tempore, quo provident hic voluptatibus eum sunt exercitationem asperiores accusamus quos totam nesciunt reiciendis ab laboriosam.</p>
+    <p>Quo aliquid, quia error odit repellendus sapiente expedita dolorem consectetur minima laudantium, optio fugit provident sit temporibus assumenda quos corporis ipsa odio reiciendis omnis. Exercitationem libero impedit magni ullam eaque.</p>
+
+    <script>
+        //tüm paragrafları getir ve arka planı sarı yap
+        var dizi= document.querySelectorAll("p");
+
+        for (var i=0; i <dizi.length; i++)
+        dizi[i].style.backgroundColor = "orange";
+
+        // jquery karşılığı: $("p").css("background-color", "orange")
+
+        var parag = document.getElementById("önemli");
+        parag.style.fontWeight = "bold";
+        //jquery karşılığı: $("önemli").css("font-weight", "bold")
+    </script>
+
+</body>
+</html>
